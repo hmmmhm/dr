@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 # 1. API 키 설정
 load_dotenv()
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
-model = genai.GenerativeModel("gemini-1.5-flash")
+model = genai.GenerativeModel("gemini-2.5-flash")
 
 # 2. 시스템 프롬프트 (초기 역할 설정)
 system_prompt = """
